@@ -1,13 +1,13 @@
 # 1. Basic - Print all integers from 0 to 150.
-# count = 0
-# while count < 150:
-#     count += 1
-#         # print(count)
+count = 0
+while count < 150:
+    count += 1
+        # print(count)
 
 # #2. Multiples of Five - Print all the multiples of 5 from 5 to 1,000
-# x= 5
-# for x in range(5, 1000, 5):
-# print(x)
+x= 5
+for x in range(5, 1001, 5):
+    print(x)
 
 #3. Counting, the Dojo Way - Print integers 1 to 100. If divisible by 5, print "Coding" instead. If divisible by 10, print "Coding Dojo".
 
@@ -23,7 +23,7 @@ for y in range(1,101):
 # Whoa. That Sucker's Huge - Add odd integers from 0 to 500,000, and print the final sum.
 
 sum = 0
-for z in range(0,50000):
+for z in range(0,50001):
     if z % 2 == 1:
         sum += z
 print(sum)
@@ -41,3 +41,4 @@ while lowNum < highNum:
     lowNum += 1
     if lowNum%mult ==0:
         print(lowNum)
+
