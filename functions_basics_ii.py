@@ -24,9 +24,32 @@ def first_plus_length(list):
     b=list[c]
     return a+b
 print(first_plus_length([1,2,3,4,5]))
+
 # Values Greater than Second - Write a function that accepts a list and creates a new list containing only the values from the original list that are greater than its 2nd value. Print how many values this is and then return the new list. If the list has less than 2 elements, have the function return False
 # Example: values_greater_than_second([5,2,3,2,1,4]) should print 3 and return [5,3,4]
-# Example: values_greater_than_second([3]) should return False
+# Example: values_greater_than_second([3]) should return 
+def values_greater_than_second(alist):
+    i=alist
+    j=[]
+    count=0
+    for x in range (len(alist)):
+        if len(alist) < 2:
+            return False
+        elif x > alist[1]:
+            count+=1
+            j.append(x)
+    print(count)
+    return j
+print(values_greater_than_second([5,2,3,2,1,4]))
+
+
 # This Length, That Value - Write a function that accepts two integers as parameters: size and value. The function should create and return a list whose length is equal to the given size, and whose values are all the given value.
 # Example: length_and_value(4,7) should return [7,7,7,7]
 # Example: length_and_value(6,2) should return [2,2,2,2,2,2]
+
+def this_length_that_value(size,value):
+    nlist = []
+    for x in range(size):
+        nlist.append(value)
+    return nlist
+print(this_length_that_value(4,7))
